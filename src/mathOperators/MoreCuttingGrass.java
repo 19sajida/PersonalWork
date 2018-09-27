@@ -24,6 +24,8 @@ width = (width*12/deck);
 area = (length*width*12);
 time = (area/(speed*5280*12));
 cost = (12*time);
+cost = (Math.round(cost*100));
+cost = (cost/100);
 System.out.println("It will take " + time + " hours to mow the lawn.");
 System.out.println("It will cost $" + cost);
 
