@@ -22,7 +22,7 @@ minute1 = (60*minutes);
 average = ((minute1+seconds)/songs);
 minute2 = ((int) (average/60));
 seconds2 = (average%60);
-System.out.println("The average length is " + minute2 + " minutes" + " and " + seconds + " seconds.");
+System.out.println("The average length is " + minute2 + " minutes" + " and " + seconds2 + " seconds.");
 	}
 
 }
