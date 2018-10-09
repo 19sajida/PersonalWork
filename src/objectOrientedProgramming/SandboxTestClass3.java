@@ -16,7 +16,6 @@ public class SandboxTestClass3 {
 		System.out.println("How many cubic feet of sand can you transport per hour?");
 		double transport = input.nextDouble();
 		Sandbox2And3 bob = new Sandbox2And3();
-		bob.Sandbox3(length, width, depth, transport);
 		double time = bob.Sandbox3(length, width, depth, transport);
 		System.out.println("It will take " + time + " hours to fill up the sand box");
 	}
