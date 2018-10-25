@@ -15,8 +15,8 @@ public class DoLoop {
 		 */
 		System.out.println("Integer:");
 		int num = input.nextInt();
-		int largest = 0;
-		int smallest = 10000;
+		int largest = num;
+		int smallest = num;
 		do {
 			if (largest < num) {
 				largest = num;
