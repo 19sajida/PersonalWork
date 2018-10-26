@@ -10,27 +10,33 @@ public class ForLoop {
 		/*
 		 * int counter = 1; for (counter=1; counter <=5; counter =
 		 * counter+1){System.out.println(counter);}
-		 
+		 * 
+		 * int counter = 0; for (counter = 1; counter <= 10; counter++) {
+		 * System.out.println(counter + " Hello"); }
+		 * 
+		 * int counter = 0; for (counter = 15; counter <= 60; counter= counter
+		 * +5) { System.out.println(counter + " Hello");} int counter = 0; for
+		 * (counter = 10; counter >=1; counter=counter-1) {
+		 * System.out.println(counter + " Hello"); }
+		 * System.out.println("How many Hello's would you like?"); int number =
+		 * input.nextInt(); int counter =0; for (counter = 1; counter <= number;
+		 * counter++) { System.out.println(counter + " Hello");}
+		 * System.out.println("What is your favorite number?"); int number =
+		 * input.nextInt(); int counter =0; for (counter = 1; counter <= 10;
+		 * counter++) { System.out.println(number + " Hello");}
+		 * 
+		 * int counter = 0; int sum = 0; for (counter = 1; counter <= 10;
+		 * counter++) { sum = sum + counter; } System.out.println("Sum: " +
+		 * sum); }
+		 */
 		int counter = 0;
-		for (counter = 1; counter <= 10; counter++) {
-			System.out.println(counter + " Hello");
+		int number = 0;
+		int sum = 0;
+		for (counter = 1; counter <= 5; counter++) {
+			System.out.println("Enter number:");
+			number = input.nextInt();
+			sum = number + sum;
 		}
-		
-		int counter = 0;
-		for (counter = 15; counter <= 60; counter= counter +5) {
-			System.out.println(counter + " Hello");} 
-		int counter = 0;
-		for (counter = 10; counter >=1; counter=counter-1) {
-			System.out.println(counter + " Hello");	}
-		System.out.println("How many Hello's would you like?");
-		int number = input.nextInt();
-		int counter =0;
-		for (counter = 1; counter <= number; counter++) {
-			System.out.println(counter + " Hello");}*/
-		System.out.println("What is your favorite number?");
-		int number = input.nextInt();
-		int counter =0;
-		for (counter = 1; counter <= 10; counter++) {
-			System.out.println(number + " Hello");}
+		System.out.println("The sum of the numbers is: " + sum);
 	}
 }
