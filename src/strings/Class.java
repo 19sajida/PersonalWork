@@ -43,11 +43,51 @@ int length = sentence.length();
 int counter=0;
 for (counter=0; counter<length; counter++)
 {System.out.println(sentence.charAt(counter));}
-*/
+
 System.out.println("Type a sentence:");
 String sentence = input.nextLine();
 System.out.println(sentence.toLowerCase());
 System.out.println(sentence);
+
+
+System.out.println("Name one: ");
+String one = input.nextLine();
+System.out.println("Name two: ");
+String two = input.nextLine();
+if (one.compareTo(two)>0){System.out.println(two.toUpperCase());}
+else{System.out.println(one.toUpperCase());}
+
+
+System.out.println("Type in password: ");
+String one = input.nextLine();
+System.out.println("Verify password: ");
+String two = input.nextLine();
+while (one.compareTo(two)!=0){System.out.println("Incorrect password. Verify password again: "); two = input.nextLine();}
+
+
+System.out.println("Type a sentence:");
+String sentence = input.nextLine();
+int counter=0;
+for(counter=; counter<sentence.length(); counter=counter+4)
+{System.out.println(sentence.charAt(counter));}
+
+
+System.out.println("Type a sentence:");
+String sentence = input.nextLine();
+int counter =0;
+for(counter=0; counter<sentence.length(); counter++){
+	if (sentence.charAt(counter)=='a'){}
+	else{if (sentence.charAt(counter)==' '){}
+	else {System.out.println(sentence.charAt(counter));}
+	}
+	}
+	*/
+
+System.out.println("Type your social security number:");
+String sentence = input.nextLine();
+System.out.println(sentence.substring(5, 9));
+System.out.println(sentence.substring(3, 5));
+System.out.println(sentence.substring(0, 3));
 	}
 
 }
