@@ -88,6 +88,8 @@ String sentence = input.nextLine();
 System.out.println(sentence.substring(5, 9));
 System.out.println(sentence.substring(3, 5));
 System.out.println(sentence.substring(0, 3));
+
+
 	}
 
 }
