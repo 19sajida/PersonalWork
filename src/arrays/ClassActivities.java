@@ -9,6 +9,7 @@ public class ClassActivities {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		Random number = new Random();
+
 		/*
 		 * int [] testscores = new int [5]; for (int counter=0; counter <
 		 * testscores.length; counter++){ System.out.println("Give a score:");
@@ -37,40 +38,40 @@ public class ClassActivities {
 		 * number++;} }
 		 * System.out.println("Number of friends with that many letters:" +
 		 * number);
+		 * 
+		 * int min = 10; int max = 56; int small = min * max; int smallIndex =
+		 * 0; int length = 0; int width = 0; final int num = 2; Rectangle[] rec
+		 * = new Rectangle[num]; for (int counter = 0; counter < rec.length;
+		 * counter++) { length = min + number.nextInt(max - min + 1); width =
+		 * min + number.nextInt(max - min + 1); rec[counter] = new
+		 * Rectangle(length, width); } for (int counter = 0; counter <
+		 * rec.length; counter++) { System.out.println("\nLength: " +
+		 * rec[counter].getLength()); System.out.println("Width: " +
+		 * rec[counter].getWidth()); System.out.println("Area: " +
+		 * rec[counter].area()); } for (int counter = 0; counter < rec.length;
+		 * counter++) { if (rec[counter].area() < small) { small =
+		 * rec[counter].area(); smallIndex = counter; } }
+		 * System.out.println("\nSmallest area: " + small);
+		 * System.out.println("Smallest area index: " + smallIndex);
+		 * 
+		 * Rectangle newRec = rec[0]; rec[0] = rec[smallIndex]; rec[smallIndex]
+		 * = newRec; for (int counter = 0; counter < rec.length; counter++) {
+		 * System.out.println(rec[counter].area());}
+		 * 
+		 * 
+		 * System.out.println("Enter a sentence: "); String sentence =
+		 * input.nextLine(); String[] words = sentence.split(" "); for (int
+		 * counter = 0; counter < words.length; counter++) {
+		 * System.out.println(words[counter].charAt(0)); }
 		 */
-		int min = 10;
-		int max = 56;
-		int small = min * max;
-		int smallIndex = 0;
-		int length = 0;
-		int width = 0;
-		final int num = 2;
-		Rectangle[] rec = new Rectangle[num];
-		for (int counter = 0; counter < rec.length; counter++) {
-			length = min + number.nextInt(max - min + 1);
-			width = min + number.nextInt(max - min + 1);
-			rec[counter] = new Rectangle(length, width);
-		}
-		for (int counter = 0; counter < rec.length; counter++) {
-			System.out.println("\nLength: " + rec[counter].getLength());
-			System.out.println("Width: " + rec[counter].getWidth());
-			System.out.println("Area: " + rec[counter].area());
-		}
-		for (int counter = 0; counter < rec.length; counter++) {
-			if (rec[counter].area() < small) {
-				small = rec[counter].area();
-				smallIndex = counter;
-			}
-		}
-		System.out.println("\nSmallest area: " + small);
-		System.out.println("Smallest area index: " + smallIndex);
 
-		Rectangle newRec = rec[0];
-		rec[0] = rec[smallIndex];
-		rec[smallIndex] = newRec;
-		for (int counter = 0; counter < rec.length; counter++) {
-			System.out.println(rec[counter].area());
-		}
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		String[] words = sentence.split(" ");
+		int low = 0;
+		int high = words.length - 1;
+		int num = low + number.nextInt(high - low + 1);
+		System.out.println(words[num]);
 	}
 
 }

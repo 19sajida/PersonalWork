@@ -22,7 +22,8 @@ public class PracticeAssessment {
 		}
 		System.out.println("Which number do you want to display?");
 		int display = input.nextInt();
-		do {average = average + display;
+		do {
+			average = average + integer[display];
 			System.out.println(integer[display]);
 			System.out.println("Which number do you want to display? 9999 to quit");
 			display = input.nextInt();
