@@ -10,6 +10,7 @@ public class PhoneTestClass {
 		// TODO Auto-generated method stub
 		Random numbers = new Random();
 		Scanner input = new Scanner(System.in);
+		
 		ArrayList<Phone> array = new ArrayList<Phone>();
 		for (int counter = 0; counter < 2; counter++) {
 			System.out.println("Enter phone number: ");
@@ -27,6 +28,7 @@ public class PhoneTestClass {
 			}
 		}
 		System.out.println(array.get(array.size()-1).clone().toString());
+		
 	}
 
 }
