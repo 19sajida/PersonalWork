@@ -12,7 +12,11 @@ public class Book {
 
 	public Book(String xTitle, int xPages) {
 		title = xTitle;
-		pages = xPages;
+		if (pages < 0) {
+			pages = xPages;
+		} else {
+			pages = 0;
+		}
 	}
 
 	public String getTitle() {
