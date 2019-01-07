@@ -23,9 +23,9 @@ public class Student implements Person
 	}
 	
 
-	public void setName(String xName)
+	public void setName(String bob)
 	{
-		name = xName;
+		name = bob;
 	}
 
 	public int getAge()
