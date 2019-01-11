@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Quadrilateral {
+public class Quadrilateral{
 	private double s1;
 	private double s2;
 	private double s3;
@@ -53,7 +53,7 @@ public class Quadrilateral {
 	}
 
 	public double perimeter() {
-		double perimeter = s1 + s2 + 23 + s4;
+		double perimeter = s1 + s2 + s3 + s4;
 		return perimeter;
 	}
 }
