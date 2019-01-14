@@ -22,12 +22,12 @@ public class GeoTestClass {
 				num = counter;
 			}
 		}
-		
-			if (array.get(num) instanceof Rectangle) {
-				System.out.println("The largest area was a rectangle.");
-			} else {
-				System.out.println("The largest area was a trapezoid.");
-			}
+
+		if (array.get(num) instanceof Rectangle) {
+			System.out.println("The largest area was a rectangle.");
+		} else {
+			System.out.println("The largest area was a trapezoid.");
+		}
 		System.out.println("Largest area: " + largest);
 	}
 

@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Quadrilateral{
+public class Quadrilateral {
 	private double s1;
 	private double s2;
 	private double s3;
@@ -55,5 +55,22 @@ public class Quadrilateral{
 	public double perimeter() {
 		double perimeter = s1 + s2 + s3 + s4;
 		return perimeter;
+	}
+
+	public String toString() {
+		return "Side 1: " + s1 + " Side 2: " + s2 + " Side 3: " + s3 + " Side 4: " + s4;
+	}
+
+	public boolean equals(Object other) {
+		if (other.toString().equals(this.toString())) {
+
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public Object clone() {
+		return new Quadrilateral(s1, s2, s3, s4);
 	}
 }

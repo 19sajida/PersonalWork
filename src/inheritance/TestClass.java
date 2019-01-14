@@ -12,10 +12,11 @@ public class TestClass {
 		System.out.println(bob2.area());
 		System.out.println(bob2.perimeter());
 
-		Parallelogram bob3 = new Parallelogram(1, 2);
+		Parallelogram bob3 = new Parallelogram(1, 2, 3);
 		System.out.println(bob3.area());
 		System.out.println(bob3.perimeter());
-		
+		System.out.println(bob3.toString());
+
 		Square bob4 = new Square(1);
 		System.out.println(bob4.area());
 		System.out.println(bob4.perimeter());
