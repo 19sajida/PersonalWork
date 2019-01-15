@@ -6,7 +6,7 @@ public class Auto {
 
 	public Auto() {
 		odometer = 0;
-		mPG = 0;
+		mPG = 5;
 	}
 
 	private Auto(double one, double two) {
